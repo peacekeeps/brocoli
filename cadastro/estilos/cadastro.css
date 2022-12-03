@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: green;
+    width: 100%;
+    font-size: .6em;
+    padding: 1.5em;
+    color: white;
+    text-align: center;
+
+    /* mobile-only */
+    position: fixed;
+    top: 0;
+}
+
+body {
+    background-color: rgb(154, 252, 141);
+}
+
+main {
+    margin: auto;
+}
+
+/* Formulário */
+
+fieldset {
+    /* padding: .5em; */
+    overflow: hidden;
+    border: none;
+}
+
+fieldset:nth-of-type(1) {
+    margin-top: 4em;
+}
+
+.input-container {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1em;
+    border-bottom: 1px solid black;
+}
+
+label {
+    display: block;
+    background: rgb(84, 234, 84);
+    margin-bottom: .5em;
+    padding: .5em;
+}
+
+label::after {
+    content: ":";
+}
+
+input {
+    display: block;
+    height: 2.1em;
+    width: 90%;
+    padding: 1em .5em;
+    margin: auto;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: .5px solid rgba(35, 93, 28, 0.349);
+    outline: none;
+}

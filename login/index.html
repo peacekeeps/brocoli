@@ -31,6 +31,7 @@
                 required
                 autocomplete="email"
                 placeholder="USERNAME"
+                onclick="fadeoutplaceholder()"
               />
               <label for="input-email" class="mc-only">Email</label>
             </div>
@@ -45,6 +46,7 @@
                 autocomplete="current-password mc-only"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 title="Sua senha deve conter 8 ou mais dígitos, sendo pelo menos uma letra minúscula, uma letra maiúscula e um numero."
+                onclick="fadeoutplaceholder()"
               />
               <label for="input-password" class="mc-only">Password</label>
             </div>
