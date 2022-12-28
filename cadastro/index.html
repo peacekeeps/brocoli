@@ -7,19 +7,37 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="estilos/cadastro.css">
     <link rel="stylesheet" href="estilos/mediaquery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <header>
+        <span class="material-icons" id="menu_icon">menu</span>
         <h1>CADASTRO DO CLIENTE</h1>
     </header>
+    <nav class="menu mobile" id="menu">
+        <ul>
+            <li>Ordem de Locação</li>
+            <li>Clientes</li>
+            <li>Equipamentos</li>
+        </ul>
+    </nav>
+    <!-- <nav class="menu" id="bg-menu">
+        <ul>
+            <li>Ordem de Locação</li>
+            <li>Clientes</li>
+            <li>Equipamentos</li>
+        </ul>
+    </nav> -->
     <main>
         <form action="cadastro.php" method="post">
+            <h2>Dados do Cliente</h2>
+            <hr>
+            <p class="required"><strong>* Obrigatório</strong></p>
+
             <fieldset>
-                <h2 class="grid-item grid-header">Dados do Cliente</h2>
-                <p class="required grid-header"><strong>* Obrigatório</strong></p>
                 <div class="input-container grid-item1">
                     <label for="firstname-input">Nome</label>
-                    <input type="text" name="firstname-input" id="name-input" placeholder="Joãozinho" autocapitalize="sentences" max-lenght=" 50" required>
+                    <input type="text" name="firstname-input" id="firstname-input" placeholder="Joãozinho" autocapitalize="sentences" max-lenght=" 50" required>
                 </div>
 
                 <div class="input-container grid-item2">
@@ -59,7 +77,7 @@
 
                 <div class="input-container grid-item10">
                     <label for="contato1-input">Contato</label>
-                    <input type="text" name="contato1-input" id="contato1-input" placeholder="Celular*" required> <span class="legenda">(xx) xxxxx-xxxx</span>
+                    <input type="text" name="contato1-input" id="contato1-input" placeholder="(xx) xxxxx-xxxx*" required>
                 </div>
 
                 <div class="input-container grid-item11">
@@ -79,14 +97,13 @@
 
             </fieldset>
 
+            <h2 class="title">Endereço</h2>
+            <hr>
             <fieldset>
-                <h2 class="title grid-item grid-header">Endereço</h2>
-                <div class="input-container grid-item13">
+                <div class="input-container grid-cep">
                     <label for="cep-input">CEP</label>
                     <input type="text" name="cep-input" id="cep-input" placeholder="CEP*" required>
                 </div>
-
-                <div class="grid-item14"></div>
 
                 <div class="input-container grid-estado">
                     <label for="uf-input">UF</label>
@@ -126,5 +143,6 @@
             </fieldset>
         </form>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
