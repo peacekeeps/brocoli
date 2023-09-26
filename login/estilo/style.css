@@ -12,7 +12,7 @@ mc-only {
 
 body {
     height: 100vh;
-    background: url('../imagens/fundo.jpg') center center fixed no-repeat;
+    background: url('../imagens/fundo-sm.jpg') center center fixed no-repeat;
     background-size: cover;
     min-width: 280px;
     display: grid;
